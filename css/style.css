@@ -1,0 +1,131 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.header {
+    width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    transition: background-color 0.3s ease;
+}
+
+.header:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #a0e9ff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contacts {
+    display: flex;
+    gap: 15px;
+    width: 250px;
+}
+
+.contact img {
+    width: 33px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.contact img:nth-child(2) {
+    width: 85px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.contact img:hover {
+    transform: rotate(360deg);
+    filter: brightness(1.2);
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.about_us {
+    padding: 100px 20px 20px;
+    max-width: 1190px;
+    margin: 0 auto;
+}
+
+.about_us_title {
+    font-size: 36px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.about_us_text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 100px;
+    width: 550px;
+}
+
+.about_us_img {
+    max-width: 500px;
+    height: auto;
+    float: right;
+    border-radius: 50%;
+    margin-bottom: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: border-radius 1s ease, filter 1s ease;
+}
