@@ -9,6 +9,87 @@ body {
     color: #fff;
 }
 
+.place_block {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.blok_flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.place {
+    text-align: center;
+    position: relative;
+    margin-top: 40px;
+}
+
+.place_image {
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    border: 4px solid #fff;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.pedestal {
+    width: 250px;
+    background: #f0f0f0;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.pedestal::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 15px;
+    background: #d0d0d0;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.first_place_pedestal {
+    background: linear-gradient(45deg, #FFD700, #FFEC8B);
+    height: 100px;
+}
+
+.second_place_pedestal {
+    background: linear-gradient(45deg, #C0C0C0, #D3D3D3);
+    height: 90px;
+}
+
+.third_place_pedestal {
+    background: linear-gradient(45deg, #CD7F32, #DAA520);
+    height: 80px;
+}
+
+.place_label {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.place_image:hover {
+    transform: scale(1.15);
+}
+
 .header {
     width: 100vw;
     max-width: 100vw;
@@ -128,4 +209,13 @@ body {
     margin-bottom: 300px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: border-radius 1s ease, filter 1s ease;
+}
+
+.blok_flex{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
 }

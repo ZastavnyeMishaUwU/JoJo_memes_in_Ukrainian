@@ -41,14 +41,14 @@ function changeBackgroundColor() {
 document.addEventListener('DOMContentLoaded', () => {
     const img = document.querySelector('.about_us_img');
     const button = document.getElementById('changeBackgroundColor');
-    
+
     animateBorderRadius();
 
     img.addEventListener('mouseover', () => {
         stopAnimation();
         animateColor();
     });
-    
+
     img.addEventListener('mouseout', () => {
         animateBorderRadius();
         resetColor();
