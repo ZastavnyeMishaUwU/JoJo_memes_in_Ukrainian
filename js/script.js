@@ -41,14 +41,14 @@ function changeBackgroundColor() {
 document.addEventListener('DOMContentLoaded', () => {
     const img = document.querySelector('.about_us_img');
     const button = document.getElementById('changeBackgroundColor');
-    
+
     animateBorderRadius();
 
     img.addEventListener('mouseover', () => {
         stopAnimation();
         animateColor();
     });
-    
+
     img.addEventListener('mouseout', () => {
         animateBorderRadius();
         resetColor();
@@ -56,3 +56,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     button.addEventListener('click', changeBackgroundColor);
 });
+
+
+function toggleContent() {
+    const content = document.getElementById("expandableText");
+    const button = document.getElementById("toggleButton");
+
+    if (content.style.display === "none") {
+        content.style.display = "block";
+        button.textContent = "Закрити";
+    } else {
+        content.style.display = "none";
+        button.textContent = "Детальніше";
+    }
+}
